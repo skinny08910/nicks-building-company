@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600;700&family=Work+Sans:wght@100;400;500;700&display=swap');
 
 *,
 *::after,
@@ -8,11 +8,26 @@
   padding   : 0;
 }
 
+a {
+  list-style     : none;
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
 }
 
 body {
   font-size  : 0.9em;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Source Serif Pro', 'Work Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Source Serif Pro';
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Work Sans';
+  font-weight: 400;
 }
