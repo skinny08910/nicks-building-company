@@ -1,0 +1,26 @@
+{
+	"name": "nicks-building-company",
+	"version": "1.0.0",
+	"description": "A building and construction company.",
+	"main": "main.js",
+	"scripts": {
+		"node-sass": "css/sass/style.scc css/style.css -w"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://skinny08910:Sonder12181998@bitbucket.org/nexgendev/nicks-building-company.git"
+	},
+	"keywords": [
+		"Building",
+		"Construction",
+		"Houses",
+		"Bases",
+		"Buildings"
+	],
+	"author": "Nicksonder Examar",
+	"license": "ISC",
+	"homepage": "https://bitbucket.org/nexgendev/nicks-building-company#readme",
+	"dependencies": {
+		"node-sass": "^5.0.0"
+	}
+}
