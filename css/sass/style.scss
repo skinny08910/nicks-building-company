@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;500;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin    : 0;
+  padding   : 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-size  : 0.9em;
+  font-family: 'Work Sans', sans-serif;
+}
