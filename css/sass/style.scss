@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600;700&family=Work+Sans:wght@100;400;500;700&display=swap');
+@import "variables"; // General Styles
 
 *,
 *::after,
@@ -8,9 +9,18 @@
   padding   : 0;
 }
 
+.container {
+  width : 60%;
+  margin: 0 auto;
+}
+
 a {
-  list-style     : none;
   text-decoration: none;
+  color          : $body-p-color;
+}
+
+li {
+  list-style: none;
 }
 
 img {
@@ -20,14 +30,165 @@ img {
 body {
   font-size  : 0.9em;
   font-family: 'Source Serif Pro', 'Work Sans', sans-serif;
+  color      : $body-p-color;
 }
 
-h1 {
-  font-family: 'Source Serif Pro';
-  font-weight: 400;
+.row {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  width          : 100%;
 }
+// Header Styles
 
-p {
-  font-family: 'Work Sans';
-  font-weight: 400;
+#header {
+  .nav {
+    padding: 1em 0;
+
+    .logo {
+      width: 40%;
+
+      img {
+        width: 50%;
+      }
+    }
+
+    .navbar-link {
+      display        : flex;
+      justify-content: space-between;
+      align-items    : center;
+      width          : 30%;
+      font-family    : 'Work Sans', sans-serif;
+
+      a {
+        color     : #6e6e6e;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+          color: $body-p-color;
+        }
+      }
+    }
+  }
+}
+// Jumbo Styles
+
+#jumbo-section {
+  padding: 10em 0;
+
+  .jumbo-text {
+    align-self: flex-start;
+    width     : 40%;
+    margin-top: 8em;
+
+    .main-title {
+      font-size    : 3.5rem;
+      margin-bottom: 0.2em;
+    }
+
+    .jumbo-p {
+      font-family  : 'Work Sans', sans-serif;
+      margin-bottom: 3em;
+      line-height  : 1.5rem;
+    }
+
+    .jumbo-btn {
+      font-family: 'Work Sans', sans-serif;
+      color      : #fff;
+      padding    : 0.8em 1.5em;
+      background : $air-blue;
+    }
+  }
+
+  .jumbo-img {
+    display        : flex;
+    justify-content: flex-end;
+    width          : 60%;
+
+    img {
+      width    : 80%;
+      max-width: 100%;
+    }
+  }
+
+  .jumbo-text + .jumbo-img {
+    margin-left: 3em;
+  }
+}
+// About us Styles
+
+#about-us-section {
+  padding   : 10em 0;
+  background: $grey-color;
+
+  .about-us-img {
+    width: 60%;
+
+    img {
+      width    : 80%;
+      max-width: 100%;
+    }
+  }
+
+  .about-us-text {
+    align-self: flex-start;
+    width     : 40%;
+    margin-top: 8em;
+
+    .about-us-main-title {
+      font-size    : 3.5rem;
+      margin-bottom: 0.5em;
+    }
+
+    .about-us-p {
+      font-family  : 'Work Sans', sans-serif;
+      margin-bottom: 3em;
+      line-height  : 1.5rem;
+
+      span {
+        color     : #fff;
+        background: $body-p-color;
+        padding   : 0.1em;
+      }
+    }
+  }
+}
+// Service
+
+#service-section {
+  padding: 10em 0;
+
+  .service-section-main-title {
+    font-size    : 3.5rem;
+    margin-bottom: 0.9em;
+    text-align   : center;
+  }
+
+  .service-grid-container {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows   : 400px;
+    grid-gap             : 2em;
+
+    .box {
+      .sub-title {
+        text-align   : center;
+        font-size    : 2rem;
+        font-weight  : 600;
+        margin-bottom: 0.9em;
+      }
+
+      img {
+        margin-bottom: 0.6em;
+      }
+
+      .service-section-p {
+        font-family: 'Work Sans', sans-serif;
+        line-height: 1.5rem;
+      }
+    }
+  }
+  // .box + .box {
+  //   margin-left: 3em;
+  // }
 }

@@ -6,21 +6,119 @@
   margin: 0;
   padding: 0; }
 
+.container {
+  width: 60%;
+  margin: 0 auto; }
+
 a {
-  list-style: none;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #303030; }
+
+li {
+  list-style: none; }
 
 img {
   max-width: 100%; }
 
 body {
   font-size: 0.9em;
-  font-family: 'Source Serif Pro', 'Work Sans', sans-serif; }
+  font-family: 'Source Serif Pro', 'Work Sans', sans-serif;
+  color: #303030; }
 
-h1 {
-  font-family: 'Source Serif Pro';
-  font-weight: 400; }
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
 
-p {
-  font-family: 'Work Sans';
-  font-weight: 400; }
+#header .nav {
+  padding: 1em 0; }
+  #header .nav .logo {
+    width: 40%; }
+    #header .nav .logo img {
+      width: 50%; }
+  #header .nav .navbar-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    font-family: 'Work Sans', sans-serif; }
+    #header .nav .navbar-link a {
+      color: #6e6e6e;
+      transition: all 0.1s ease-in-out; }
+      #header .nav .navbar-link a:hover {
+        color: #303030; }
+
+#jumbo-section {
+  padding: 10em 0; }
+  #jumbo-section .jumbo-text {
+    align-self: flex-start;
+    width: 40%;
+    margin-top: 8em; }
+    #jumbo-section .jumbo-text .main-title {
+      font-size: 3.5rem;
+      margin-bottom: 0.2em; }
+    #jumbo-section .jumbo-text .jumbo-p {
+      font-family: 'Work Sans', sans-serif;
+      margin-bottom: 3em;
+      line-height: 1.5rem; }
+    #jumbo-section .jumbo-text .jumbo-btn {
+      font-family: 'Work Sans', sans-serif;
+      color: #fff;
+      padding: 0.8em 1.5em;
+      background: #6B96B0; }
+  #jumbo-section .jumbo-img {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%; }
+    #jumbo-section .jumbo-img img {
+      width: 80%;
+      max-width: 100%; }
+  #jumbo-section .jumbo-text + .jumbo-img {
+    margin-left: 3em; }
+
+#about-us-section {
+  padding: 10em 0;
+  background: #fafafa; }
+  #about-us-section .about-us-img {
+    width: 60%; }
+    #about-us-section .about-us-img img {
+      width: 80%;
+      max-width: 100%; }
+  #about-us-section .about-us-text {
+    align-self: flex-start;
+    width: 40%;
+    margin-top: 8em; }
+    #about-us-section .about-us-text .about-us-main-title {
+      font-size: 3.5rem;
+      margin-bottom: 0.5em; }
+    #about-us-section .about-us-text .about-us-p {
+      font-family: 'Work Sans', sans-serif;
+      margin-bottom: 3em;
+      line-height: 1.5rem; }
+      #about-us-section .about-us-text .about-us-p span {
+        color: #fff;
+        background: #303030;
+        padding: 0.1em; }
+
+#service-section {
+  padding: 10em 0; }
+  #service-section .service-section-main-title {
+    font-size: 3.5rem;
+    margin-bottom: 0.9em;
+    text-align: center; }
+  #service-section .service-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 400px;
+    grid-gap: 2em; }
+    #service-section .service-grid-container .box .sub-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 0.9em; }
+    #service-section .service-grid-container .box img {
+      margin-bottom: 0.6em; }
+    #service-section .service-grid-container .box .service-section-p {
+      font-family: 'Work Sans', sans-serif;
+      line-height: 1.5rem; }
