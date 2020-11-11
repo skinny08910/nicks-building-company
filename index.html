@@ -31,7 +31,7 @@
               <li><a rel="" href="index.html" class="links">Home</a></li>
               <li><a href="#about-us-section" class="links">About</a></li>
               <li><a href="#service-section" class="links">Services</a></li>
-              <li><a href="#projects" class="links">Projects</a></li>
+              <li><a href="#project-section" class="links">Projects</a></li>
               <li><a href="#contact" class="links">Contact</a></li>
             </ul>
           </div>
@@ -69,6 +69,7 @@
     <section id="about-us-section">
       <!-- Main Container -->
       <div class="container">
+        <!-- Row -->
         <!-- History -->
         <div class="row">
           <!-- History Image -->
@@ -81,7 +82,7 @@
             <h2 class="about-us-main-title">Our History</h2>
             <div class="about-us-p">
               <p>
-                <span>Nick's Building Company</span> has been building, repair, and renovating houses, offices, restaurants, and other projects for 20 plus years. Established in 1998, we took an oath to provide our customers with the most modern
+                <span>Nick's Building Company</span> has been building, repair, and renovating houses, offices, restaurants, and other projects for 30 plus years. Established in 1960, we took an oath to provide our customers with the most modern
                 projects they
                 could have at affordable prices, we believe everybody has the right to own a property in this country. Ever since Nick's Building Company have had from customers from all over the country, we strictly follow the most up to date
                 guidelines when executing our projects, we're very easy to communicate to and we finished our projects within the timeframe that we give our customers. Today, we still have thousands of clients we're working for so don't hesitate to
@@ -137,19 +138,138 @@
         </div>
     </section>
 
+    <!-- Project Section -->
+
     <section id="project-section">
       <!-- Main Container -->
       <div class="container">
         <!-- Main Title-->
         <h2 class="project-section-main-title">Our Projects</h2>
+        <!-- Grid Container -->
         <div class="project-grid-container">
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
+          <!-- Box 1 -->
+          <div class="box box-1">
+            <div class="project-info">
+              <h2 class="project-section-sub-title">Casino Club</h2>
+              <p class="project-section-p">This was a project that we took in our early years of construction, it was a transition of a casino club to a hotel in just 3 months.</p>
+            </div>
+            <img src="img/project-img-1.jpg" alt="This is a picture of a hotel." class="project-section-img-1">
+          </div>
+
+          <!-- Box 2 -->
+          <div class="box box-2">
+            <div class="project-info">
+              <h2 class="project-section-sub-title">Sales Company</h2>
+              <p class="project-section-p">This office building was one of the projects that help boost our clientele, we designed it ourselves, built it in under 5 months, and deliver it to the owner.</p>
+            </div>
+            <img src="img/project-img-2.jpg" alt="This is a picture of an office building." class="project-section-img-2">
+          </div>
+
+          <!-- Box 3 -->
+          <div class="box box-3">
+            <div class="project-info">
+              <h2 class="project-section-sub-title">Liberty University</h2>
+              <p class="project-section-p">One of our biggest and most proud project to date, Liberty University was a stepping stone for us. It took us about a year to finish everything from dorms to classrooms to the stadium, we all enjoyed it to
+                the very end.</p>
+            </div>
+            <img src="img/project-img-3.jpg" alt="This is a picture of Liberty University." class="project-section-img-4">
+          </div>
+
+          <!-- Box 4 -->
+          <div class="box box-4">
+            <div class="project-info">
+              <h2 class="project-section-sub-title">News Paper Company</h2>
+              <p class="project-section-p">This project was another big hit for us, an office building made from ground up with our design, very modern, this one took us about 7 months to build it.</p>
+            </div>
+            <img src="img/project-img-4.jpg" alt="This is a picture of an office building for a News Paper Company." class="project-section-img-4">
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact-section">
+      <!-- Main Container -->
+      <div class="container">
+        <!-- Row -->
+        <div class="row">
+          <!-- Contact Image -->
+          <div class="contact-img">
+            <img src="img/contact-us-img.jpg" alt="This is a picture of two construction workers together.">
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-info">
+            <!-- Main Title -->
+            <h2 class="contact-us-main-title">Get In Touch</h2>
+            <!-- Form -->
+            <form action="#" class="form">
+              <!-- First Row -->
+              <div class="row">
+                <!-- First Name -->
+                <div class="first-name-group">
+                  <label for="first-name">First Name</label>
+                  <div class="first-name">
+                    <input type="text" name="First-Name" id="first-name">
+                  </div>
+                </div>
+
+                <!-- Last Name -->
+                <div class="last-name-group">
+                  <label for="last-name">Last Name</label>
+                  <div class="last-name">
+                    <input type="text" name="Last-Name" id="last-name">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Second Row -->
+              <div class="row">
+                <!-- Phone Number -->
+                <div class="phone-number-group">
+                  <label for="phone-numer">Phone Numer</label>
+                  <div class="phone-number">
+                    <input type="tel" name="Phone-Number" id="phone-number">
+                  </div>
+                </div>
+
+                <!-- Company Name -->
+                <div class="company-name-group">
+                  <label for="company-name">Company Name <span>(optional) </span></label>
+                  <div class="company-name">
+                    <input type="text" name="Company-Name" id="company-name">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email Address -->
+              <label for="email-address">Email</label>
+              <div class="email-address">
+                <input type="email" name="Email-Address" id="email-address">
+              </div>
+
+              <!-- Message -->
+              <label for="message">Message</label>
+              <div class="message">
+                <textarea id="message" name="message" rows="8" cols="40"></textarea>
+              </div>
+
+              <!-- Button -->
+              <button type="submit">Send</button>
+
+              <!--  Agreement -->
+              <p class="agreement">By clicking send you agreed that the <a href="#">terms</a> and <a href="#">privacy</a> of the site.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+    <script src="js/smooth-scrolling.js" charset="utf-8"></script>
 
   </body>
 
