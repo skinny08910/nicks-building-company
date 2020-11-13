@@ -32,7 +32,7 @@
               <li><a href="#about-us-section" class="links">About</a></li>
               <li><a href="#service-section" class="links">Services</a></li>
               <li><a href="#project-section" class="links">Projects</a></li>
-              <li><a href="#contact" class="links">Contact</a></li>
+              <li><a href="#contact-section" class="links">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -206,38 +206,38 @@
             <!-- Form -->
             <form action="#" class="form">
               <!-- First Row -->
-              <div class="row">
+              <div class="row first-row">
                 <!-- First Name -->
                 <div class="first-name-group">
                   <label for="first-name">First Name</label>
-                  <div class="first-name">
-                    <input type="text" name="First-Name" id="first-name">
+                  <div class="first-name input-container">
+                    <input value="" type="text" name="First-Name" id="first-name" required>
                   </div>
                 </div>
 
                 <!-- Last Name -->
                 <div class="last-name-group">
                   <label for="last-name">Last Name</label>
-                  <div class="last-name">
-                    <input type="text" name="Last-Name" id="last-name">
+                  <div class="last-name input-container">
+                    <input type="text" name="Last-Name" id="last-name" required>
                   </div>
                 </div>
               </div>
 
               <!-- Second Row -->
-              <div class="row">
+              <div class="row second-row">
                 <!-- Phone Number -->
                 <div class="phone-number-group">
                   <label for="phone-numer">Phone Numer</label>
-                  <div class="phone-number">
-                    <input type="tel" name="Phone-Number" id="phone-number">
+                  <div class="phone-number input-container">
+                    <input type=" tel" name="Phone-Number" id="phone-number" required>
                   </div>
                 </div>
 
                 <!-- Company Name -->
                 <div class="company-name-group">
-                  <label for="company-name">Company Name <span>(optional) </span></label>
-                  <div class="company-name">
+                  <label for="company-name">Company Name (optional)</label>
+                  <div class="company-name input-container">
                     <input type="text" name="Company-Name" id="company-name">
                   </div>
                 </div>
@@ -245,26 +245,40 @@
 
               <!-- Email Address -->
               <label for="email-address">Email</label>
-              <div class="email-address">
-                <input type="email" name="Email-Address" id="email-address">
+              <div class="email-address input-container">
+                <input type="email" name="Email-Address" id="email-address" required>
               </div>
 
               <!-- Message -->
               <label for="message">Message</label>
-              <div class="message">
-                <textarea id="message" name="message" rows="8" cols="40"></textarea>
+              <div class="message textarea-container">
+                <textarea id="message" name="message" rows="8" cols="40" required></textarea>
               </div>
 
               <!-- Button -->
-              <button type="submit">Send</button>
+              <button type="submit" class="contact-section-btn">Send</button>
 
               <!--  Agreement -->
-              <p class="agreement">By clicking send you agreed that the <a href="#">terms</a> and <a href="#">privacy</a> of the site.</p>
+              <p class="agreement">By clicking send you agreed to the <span><a href="#">terms</a></span> and <span><a href="#">privacy</a></span> of the site.</p>
             </form>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+      <!-- Container -->
+      <div class="container">
+        <!-- Copyright -->
+        <div class="copyright">
+          <p>
+            &#169;1960-2020 Nick's Building Company. All right reserve.
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <!-- Js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
