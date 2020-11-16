@@ -1,3 +1,25 @@
+// Mobile Menu
+
+var hamburgerMenu = document.querySelector(".hamburger-menu");
+var mobileMenu = document.querySelector(".mobile-menu");
+var mobileMenuLinks = document.querySelector(".mobile-menu")
+	.querySelectorAll(".links");
+
+// Toggle the links
+hamburgerMenu.addEventListener("click", function () {
+	mobileMenu.classList.toggle("active");
+});
+
+// Remove the mobile menu when clicking on the links
+var i = 0;
+
+while (i < mobileMenuLinks.length) {
+	mobileMenuLinks[i].onclick = function () {
+		mobileMenu.classList.remove("active");
+	}
+	i++
+}
+
 // Form Validation
 // Element
 var input = document.querySelectorAll('input');

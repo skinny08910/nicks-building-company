@@ -17,7 +17,7 @@
 
     <header id="header">
       <!-- Main Container -->
-      <div class="container">
+      <div class="container nav-container">
         <!-- Navigation -->
         <nav class="nav">
           <div class="row">
@@ -28,14 +28,29 @@
 
             <!-- Navbar -->
             <ul class="navbar-link">
-              <li><a rel="" href="index.html" class="links">Home</a></li>
+              <li><a href="index.html" class="links">Home</a></li>
               <li><a href="#about-us-section" class="links">About</a></li>
               <li><a href="#service-section" class="links">Services</a></li>
               <li><a href="#project-section" class="links">Projects</a></li>
               <li><a href="#contact-section" class="links">Contact</a></li>
             </ul>
+
+            <!-- Hamburger Menu -->
+            <div class="hamburger-menu">
+              <div class="lines"></div>
+              <div class="lines"></div>
+              <div class="lines"></div>
+            </div>
           </div>
         </nav>
+
+        <ul class="mobile-menu">
+          <li><a href="index.html" class="links">Home</a></li>
+          <li><a href="#about-us-section" class="links">About</a></li>
+          <li><a href="#service-section" class="links">Services</a></li>
+          <li><a href="#project-section" class="links">Projects</a></li>
+          <li><a href="#contact-section" class="links">Contact</a></li>
+        </ul>
       </div>
     </header>
 
@@ -252,7 +267,7 @@
               <!-- Message -->
               <label for="message">Message</label>
               <div class="message textarea-container">
-                <textarea id="message" name="message" rows="8" cols="40" required></textarea>
+                <textarea id="message" name="message" rows="10" cols="40" required></textarea>
               </div>
 
               <!-- Button -->
