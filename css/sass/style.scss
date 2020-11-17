@@ -29,6 +29,11 @@ img {
   width    : 100%;
 }
 
+input::-moz-focus-inner {
+  outline: none;
+  border : 0;
+}
+
 body {
   font-size  : 0.9em;
   font-family: 'Source Serif Pro', 'Work Sans', sans-serif;
@@ -363,9 +368,14 @@ body {
           line-height: 1.5rem;
           width      : 90%;
           height     : 100%;
-          outline    : none;
-          border     : none;
+          outline    : 0;
+          border     : 0;
           margin-left: 1em;
+
+          &::-moz-focus-inner {
+            outline: 0;
+            border : 0;
+          }
         }
       }
 
@@ -392,13 +402,18 @@ body {
         textarea {
           font-family: 'Work Sans', sans-serif;
           line-height: 1.5rem;
-          width      : 97%;
-          height     : 90%;
+          width      : 96%;
+          height     : 88%;
           outline    : none;
-          border     : none;
+          border     : 0;
           resize     : none;
           margin-top : 1.1em;
           margin-left: 1em;
+
+          &::-moz-focus-inner {
+            outline: none;
+            border : 0;
+          }
         }
       }
 
@@ -496,7 +511,6 @@ body {
         flex-direction : column;
         justify-content: flex-start;
         align-items    : flex-start;
-        grid-gap       : 2em;
         padding        : 2em 0;
         width          : 100%;
         height         : 100vh;
@@ -511,8 +525,18 @@ body {
           visibility: visible;
         }
 
-        .links {
+        li {
           margin: 2em 0 0 2em;
+          width : 100%;
+
+          .links {
+            display: block;
+            width  : 100%;
+          }
+        }
+
+        li + li {
+          margin-top: 2em;
         }
       }
     }
@@ -603,11 +627,21 @@ body {
       .box-2 {
         grid-column: 1/1;
         grid-row   : 2/3;
+        height     : 240px;
+
+        img {
+          height: 100%;
+        }
       }
 
       .box-3 {
         grid-column: 1/1;
         grid-row   : 3/4;
+        height     : 240px;
+
+        img {
+          height: 100%;
+        }
       }
 
       .box-4 {
