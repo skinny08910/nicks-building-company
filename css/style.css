@@ -353,8 +353,9 @@ body {
     #project-section .project-section-main-title {
       font-size: 3.3rem; }
     #project-section .project-grid-container {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 200px; }
+      grid-template-columns: repeat(3, 1fr); }
+      #project-section .project-grid-container .project-info {
+        height: 100%; }
   #contact-section {
     padding: 8em 0; }
     #contact-section .contact-img {
