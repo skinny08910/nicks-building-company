@@ -6,11 +6,6 @@
   margin: 0;
   padding: 0; }
 
-.container {
-  max-width: 1500px;
-  width: 60%;
-  margin: 0 auto; }
-
 a {
   text-decoration: none;
   color: #303030; }
@@ -20,16 +15,19 @@ li {
 
 img {
   max-width: 100%;
-  width: 100%; }
-
-input::-moz-focus-inner {
-  outline: none;
-  border: 0; }
+  width: 100%;
+  height: inherit;
+  object-fit: cover; }
 
 body {
   font-size: 0.9em;
   font-family: 'Source Serif Pro', 'Work Sans', sans-serif;
   color: #303030; }
+
+.container {
+  max-width: 1500px;
+  width: 60%;
+  margin: 0 auto; }
 
 .row {
   display: flex;
@@ -42,7 +40,8 @@ body {
   #header .nav .logo {
     width: 40%; }
     #header .nav .logo img {
-      width: 50%; }
+      width: 50%;
+      height: inherit; }
   #header .nav .navbar-link {
     display: flex;
     justify-content: space-between;
@@ -103,6 +102,7 @@ body {
     #jumbo-section .jumbo-img img {
       width: 80%;
       max-width: 100%;
+      height: inherit;
       border-radius: 2px; }
   #jumbo-section .jumbo-text + .jumbo-img {
     margin-left: 3em; }
@@ -115,6 +115,7 @@ body {
     #about-us-section .about-us-img img {
       width: 80%;
       max-width: 100%;
+      height: inherit;
       border-radius: 2px; }
   #about-us-section .about-us-text {
     align-self: flex-start;
@@ -151,6 +152,8 @@ body {
       font-weight: 600;
       margin-bottom: 0.9em; }
     #service-section .service-grid-container .box img {
+      width: inherit;
+      height: inherit;
       margin-bottom: 0.6em;
       border-radius: 2px; }
     #service-section .service-grid-container .box .service-section-p {
@@ -175,6 +178,8 @@ body {
       position: relative;
       transition: all 1s ease-in-out; }
       #project-section .project-grid-container .box img {
+        width: inherit;
+        height: inherit;
         border-radius: 2px; }
       #project-section .project-grid-container .box:hover .project-info {
         visibility: visible;
@@ -215,6 +220,7 @@ body {
     #contact-section .contact-img img {
       width: 80%;
       max-width: 100%;
+      height: inherit;
       border-radius: 2px; }
   #contact-section .contact-info {
     align-self: flex-start;
@@ -365,7 +371,9 @@ body {
     #contact-section .contact-info {
       width: 100%; }
       #contact-section .contact-info .contact-us-main-title {
-        font-size: 3.3rem; } }
+        font-size: 3.3rem; }
+      #contact-section .contact-info .form .textarea-container textarea {
+        height: 86%; } }
 
 /***** iPad, Tablet *****/
 @media only screen and (min-width: 600px) and (max-width: 1000px) {
@@ -409,12 +417,10 @@ body {
         visibility: visible; }
       #header .nav-container .mobile-menu li {
         margin: 2em 0 0 2em;
-        width: 100%; }
+        width: 95%; }
         #header .nav-container .mobile-menu li .links {
           display: block;
           width: 100%; }
-      #header .nav-container .mobile-menu li + li {
-        margin-top: 2em; }
   #jumbo-section {
     padding: 8em 0; }
     #jumbo-section .jumbo-text {
@@ -475,12 +481,20 @@ body {
       margin-top: 0; }
       #contact-section .contact-info .contact-us-main-title {
         font-size: 3.3rem; }
+      #contact-section .contact-info .form .first-row .first-name input {
+        width: 86%; }
+      #contact-section .contact-info .form .first-row .last-name input {
+        width: 86%; }
       #contact-section .contact-info .form .first-row .first-name-group + .last-name-group {
         margin-left: 1em; }
+      #contact-section .contact-info .form .second-row .phone-number input {
+        width: 86%; }
+      #contact-section .contact-info .form .second-row .company-name input {
+        width: 86%; }
       #contact-section .contact-info .form .second-row .phone-number-group + .company-name-group {
         margin-left: 1em; }
       #contact-section .contact-info .form .textarea-container textarea {
-        width: 95%;
+        width: 94%;
         height: 87%; } }
 
 /***** Mobile *****/
@@ -525,12 +539,10 @@ body {
         visibility: visible; }
       #header .nav-container .mobile-menu li {
         margin: 2em 0 0 2em;
-        width: 100%; }
+        width: 90%; }
         #header .nav-container .mobile-menu li .links {
           display: block;
           width: 100%; }
-      #header .nav-container .mobile-menu li + li {
-        margin-top: 2em; }
   #jumbo-section {
     padding: 8em 0; }
     #jumbo-section .jumbo-text {
@@ -557,6 +569,8 @@ body {
       margin: 0; }
       #about-us-section .about-us-text .about-us-main-title {
         font-size: 3.3rem; }
+    #about-us-section .about-us-img + .about-us-text {
+      margin-left: 0; }
   #service-section {
     padding: 8em 0; }
     #service-section .service-section-main-title {
@@ -620,7 +634,7 @@ body {
           margin-bottom: 1.5em; }
       #contact-section .contact-info .form .textarea-container textarea {
         margin-left: 0.8em;
-        width: 96%;
-        height: 89%; }
+        width: 95%;
+        height: 86%; }
     #contact-section .contact-img + .contact-info {
       margin-left: 0; } }

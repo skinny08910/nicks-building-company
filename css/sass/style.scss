@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600;700&family=Work+Sans:wght@100;400;500;700&display=swap');
-@import "variables";
-@import "animation"; // General Styles
+@import "variables"; // General Styles
 
 *,
 *::after,
@@ -8,12 +7,6 @@
   box-sizing: border-box;
   margin    : 0;
   padding   : 0;
-}
-
-.container {
-  max-width: 1500px;
-  width    : 60%;
-  margin   : 0 auto;
 }
 
 a {
@@ -26,19 +19,22 @@ li {
 }
 
 img {
-  max-width: 100%;
-  width    : 100%;
-}
-
-input::-moz-focus-inner {
-  outline: none;
-  border : 0;
+  max-width : 100%;
+  width     : 100%;
+  height    : inherit;
+  object-fit: cover;
 }
 
 body {
   font-size  : 0.9em;
   font-family: 'Source Serif Pro', 'Work Sans', sans-serif;
   color      : $body-p-color;
+}
+
+.container {
+  max-width: 1500px;
+  width    : 60%;
+  margin   : 0 auto;
 }
 
 .row {
@@ -57,7 +53,8 @@ body {
       width: 40%;
 
       img {
-        width: 50%;
+        width : 50%;
+        height: inherit;
       }
     }
 
@@ -150,6 +147,7 @@ body {
     img {
       width        : 80%;
       max-width    : 100%;
+      height       : inherit;
       border-radius: 2px;
     }
   }
@@ -170,6 +168,7 @@ body {
     img {
       width        : 80%;
       max-width    : 100%;
+      height       : inherit;
       border-radius: 2px;
     }
   }
@@ -227,6 +226,8 @@ body {
       }
 
       img {
+        width        : inherit;
+        height       : inherit;
         margin-bottom: 0.6em;
         border-radius: 2px;
       }
@@ -265,6 +266,8 @@ body {
       transition: all 1s ease-in-out;
 
       img {
+        width        : inherit;
+        height       : inherit;
         border-radius: 2px;
       }
 
@@ -330,6 +333,7 @@ body {
     img {
       width        : 80%;
       max-width    : 100%;
+      height       : inherit;
       border-radius: 2px;
     }
   }
@@ -589,6 +593,14 @@ body {
       .contact-us-main-title {
         font-size: 3.3rem;
       }
+
+      .form {
+        .textarea-container {
+          textarea {
+            height: 86%;
+          }
+        }
+      }
     }
   }
 }
@@ -656,16 +668,12 @@ body {
 
         li {
           margin: 2em 0 0 2em;
-          width : 100%;
+          width : 95%;
 
           .links {
             display: block;
             width  : 100%;
           }
-        }
-
-        li + li {
-          margin-top: 2em;
         }
       }
     }
@@ -785,12 +793,36 @@ body {
 
       .form {
         .first-row {
+          .first-name {
+            input {
+              width: 86%;
+            }
+          }
+
+          .last-name {
+            input {
+              width: 86%;
+            }
+          }
+
           .first-name-group + .last-name-group {
             margin-left: 1em;
           }
         }
 
         .second-row {
+          .phone-number {
+            input {
+              width: 86%;
+            }
+          }
+
+          .company-name {
+            input {
+              width: 86%;
+            }
+          }
+
           .phone-number-group + .company-name-group {
             margin-left: 1em;
           }
@@ -798,7 +830,7 @@ body {
 
         .textarea-container {
           textarea {
-            width : 95%;
+            width : 94%;
             height: 87%;
           }
         }
@@ -870,16 +902,12 @@ body {
 
         li {
           margin: 2em 0 0 2em;
-          width : 100%;
+          width : 90%;
 
           .links {
             display: block;
             width  : 100%;
           }
-        }
-
-        li + li {
-          margin-top: 2em;
         }
       }
     }
@@ -930,6 +958,10 @@ body {
       .about-us-main-title {
         font-size: 3.3rem;
       }
+    }
+
+    .about-us-img + .about-us-text {
+      margin-left: 0;
     }
   }
   // Service Styles
@@ -1042,8 +1074,8 @@ body {
         .textarea-container {
           textarea {
             margin-left: 0.8em;
-            width      : 96%;
-            height     : 89%;
+            width      : 95%;
+            height     : 86%;
           }
         }
       }
