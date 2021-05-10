@@ -352,8 +352,10 @@ body {
         font-size: 3.3rem; }
     #jumbo-section .jumbo-img {
       width: 100%; }
-      #jumbo-section .jumbo-img picture img {
-        width: 100%; }
+      #jumbo-section .jumbo-img picture {
+        width: 90%; }
+        #jumbo-section .jumbo-img picture img {
+          width: 100%; }
   #about-us-section {
     padding: 8em 0; }
     #about-us-section .about-us-img {
@@ -383,8 +385,10 @@ body {
     padding: 8em 0; }
     #contact-section .contact-img {
       width: 100%; }
-      #contact-section .contact-img picture img {
-        width: 100%; }
+      #contact-section .contact-img picture {
+        width: 90%; }
+        #contact-section .contact-img picture img {
+          width: 100%; }
     #contact-section .contact-info {
       width: 100%; }
       #contact-section .contact-info .contact-us-main-title {
@@ -448,8 +452,10 @@ body {
     #jumbo-section .jumbo-img {
       justify-content: center;
       width: 100%; }
-      #jumbo-section .jumbo-img picture img {
+      #jumbo-section .jumbo-img picture {
         width: 100%; }
+        #jumbo-section .jumbo-img picture img {
+          width: 100%; }
   #about-us-section {
     padding: 8em 0; }
     #about-us-section .about-us-img {
@@ -491,8 +497,10 @@ body {
     padding: 8em 0; }
     #contact-section .contact-img {
       width: 100%; }
-      #contact-section .contact-img picture img {
+      #contact-section .contact-img picture {
         width: 100%; }
+        #contact-section .contact-img picture img {
+          width: 100%; }
     #contact-section .contact-info {
       width: 100%;
       margin-top: 0; }
@@ -578,8 +586,10 @@ body {
     #jumbo-section .jumbo-img {
       justify-content: center;
       width: 100%; }
-      #jumbo-section .jumbo-img picture img {
+      #jumbo-section .jumbo-img picture {
         width: 100%; }
+        #jumbo-section .jumbo-img picture img {
+          width: 100%; }
     #jumbo-section .jumbo-text + .jumbo-img {
       margin-left: 0; }
   #about-us-section {
@@ -662,7 +672,9 @@ body {
         height: 86%; }
     #contact-section .contact-img {
       width: 100%; }
-      #contact-section .contact-img picture img {
+      #contact-section .contact-img picture {
         width: 100%; }
+        #contact-section .contact-img picture img {
+          width: 100%; }
     #contact-section .contact-info + .contact-img {
       margin-left: 0; } }
