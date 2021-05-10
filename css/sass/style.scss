@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600;700&family=Work+Sans:wght@100;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600;700&family=Work+Sans:wght@100;400;500;700&display=swap");
 @import "variables"; // General Styles
 
 *,
 *::after,
 *::before {
   box-sizing: border-box;
-  margin    : 0;
-  padding   : 0;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
-  color          : $body-p-color;
+  color: $body-p-color;
 }
 
 li {
@@ -19,34 +19,34 @@ li {
 }
 
 img {
-  max-width : 100%;
-  width     : 100%;
-  height    : 100%;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 source {
-  width : 100%;
+  width: 100%;
   height: 100%;
 }
 
 body {
-  font-size  : 0.9em;
-  font-family: 'Source Serif Pro', 'Work Sans', sans-serif;
-  color      : $body-p-color;
+  font-size: 0.9em;
+  font-family: "Source Serif Pro", "Work Sans", sans-serif;
+  color: $body-p-color;
 }
 
 .container {
   max-width: 1500px;
-  width    : 60%;
-  margin   : 0 auto;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .row {
-  display        : flex;
+  display: flex;
   justify-content: space-between;
-  align-items    : center;
-  width          : 100%;
+  align-items: center;
+  width: 100%;
 }
 // Header Styles
 
@@ -58,20 +58,20 @@ body {
       width: 40%;
 
       img {
-        width : 50%;
+        width: 50%;
         height: inherit;
       }
     }
 
     .navbar-link {
-      display        : flex;
+      display: flex;
       justify-content: space-between;
-      align-items    : center;
-      width          : 30%;
-      font-family    : 'Work Sans', sans-serif;
+      align-items: center;
+      width: 30%;
+      font-family: "Work Sans", sans-serif;
 
       a {
-        color     : #6e6e6e;
+        color: #6e6e6e;
         transition: all 0.1s ease-in-out;
 
         &:hover {
@@ -82,13 +82,13 @@ body {
     // Hamburger Menu Styles
     .hamburger-menu {
       display: none;
-      cursor : pointer;
+      cursor: pointer;
 
       .lines {
-        width        : 25px;
-        height       : 3px;
+        width: 25px;
+        height: 3px;
         border-radius: 20px;
-        background   : $body-p-color;
+        background: $body-p-color;
       }
 
       .lines:not(:last-child) {
@@ -98,14 +98,14 @@ body {
   }
   // Mobile Menu Styles
   .mobile-menu {
-    display        : none;
+    display: none;
     justify-content: space-between;
-    align-items    : center;
-    width          : 30%;
-    font-family    : 'Work Sans', sans-serif;
+    align-items: center;
+    width: 30%;
+    font-family: "Work Sans", sans-serif;
 
     a {
-      color     : #6e6e6e;
+      color: #6e6e6e;
       transition: all 0.1s ease-in-out;
 
       &:hover {
@@ -121,40 +121,39 @@ body {
 
   .jumbo-text {
     align-self: flex-start;
-    width     : 40%;
+    width: 40%;
     margin-top: 8em;
 
     .main-title {
-      font-size    : 3.5rem;
+      font-size: 3.5rem;
       margin-bottom: 0.2em;
     }
 
     .jumbo-p {
-      font-family  : 'Work Sans', sans-serif;
+      font-family: "Work Sans", sans-serif;
       margin-bottom: 3em;
-      line-height  : 1.5rem;
+      line-height: 1.5rem;
     }
 
     .jumbo-btn {
-      font-family  : 'Work Sans', sans-serif;
-      color        : #fff;
-      padding      : 0.8em 1.5em;
-      background   : $body-p-color;
+      font-family: "Work Sans", sans-serif;
+      color: #fff;
+      padding: 0.8em 1.5em;
+      background: $body-p-color;
       border-radius: 2px;
     }
   }
 
   .jumbo-img {
+    display: flex;
+    justify-content: flex-end;
     width: 60%;
 
     picture {
-      display        : flex;
-      justify-content: flex-end;
-      height         : 100%;
+      width: 80%;
 
       img {
-        width        : 80%;
-        max-width    : 100%;
+        max-width: 100%;
         border-radius: 2px;
       }
     }
@@ -167,39 +166,39 @@ body {
 // About us Styles
 
 #about-us-section {
-  padding   : 10em 0;
+  padding: 10em 0;
   background: $grey-color;
 
   .about-us-img {
     width: 60%;
 
     img {
-      width        : 80%;
-      max-width    : 100%;
-      height       : inherit;
+      width: 80%;
+      max-width: 100%;
+      height: inherit;
       border-radius: 2px;
     }
   }
 
   .about-us-text {
     align-self: flex-start;
-    width     : 40%;
+    width: 40%;
     margin-top: 8em;
 
     .about-us-main-title {
-      font-size    : 3.5rem;
+      font-size: 3.5rem;
       margin-bottom: 0.5em;
     }
 
     .about-us-p {
-      font-family  : 'Work Sans', sans-serif;
+      font-family: "Work Sans", sans-serif;
       margin-bottom: 3em;
-      line-height  : 1.5rem;
+      line-height: 1.5rem;
 
       span {
-        color        : #fff;
-        background   : $body-p-color;
-        padding      : 0.1em;
+        color: #fff;
+        background: $body-p-color;
+        padding: 0.1em;
         border-radius: 2px;
       }
     }
@@ -215,33 +214,33 @@ body {
   padding: 10em 0;
 
   .service-section-main-title {
-    font-size    : 3.5rem;
+    font-size: 3.5rem;
     margin-bottom: 1em;
-    text-align   : center;
+    text-align: center;
   }
 
   .service-grid-container {
-    display              : grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows   : 500px;
+    grid-template-rows: 500px;
 
     .box {
       .sub-title {
-        text-align   : center;
-        font-size    : 2rem;
-        font-weight  : 600;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
         margin-bottom: 0.9em;
       }
 
       img {
-        width        : inherit;
-        height       : inherit;
+        width: inherit;
+        height: inherit;
         margin-bottom: 0.6em;
         border-radius: 2px;
       }
 
       .service-section-p {
-        font-family: 'Work Sans', sans-serif;
+        font-family: "Work Sans", sans-serif;
         line-height: 1.5rem;
       }
     }
@@ -254,56 +253,60 @@ body {
 // Project Styles
 
 #project-section {
-  padding   : 10em 0;
+  padding: 10em 0;
   background: $grey-color;
 
   .project-section-main-title {
-    font-size    : 3.5rem;
+    font-size: 3.5rem;
     margin-bottom: 1em;
-    text-align   : center;
+    text-align: center;
   }
 
   .project-grid-container {
-    display              : grid;
-    grid-template-columns: repeat(3 , 1fr);
-    grid-gap             : 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
 
     .box {
-      color     : #fff;
-      position  : relative;
+      color: #fff;
+      position: relative;
       transition: all 1s ease-in-out;
 
       img {
-        width        : inherit;
-        height       : inherit;
+        width: inherit;
+        height: inherit;
         border-radius: 2px;
       }
 
       &:hover {
         .project-info {
           visibility: visible;
-          opacity   : 1;
+          opacity: 1;
         }
       }
 
       .project-info {
-        height       : 100%;
-        position     : absolute;
-        padding      : 1em;
-        background   : linear-gradient(to right, rgba(0,0,0, .6), rgba(0,0,0, 1));
-        visibility   : hidden;
-        opacity      : 0;
+        height: 100%;
+        position: absolute;
+        padding: 1em;
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 1)
+        );
+        visibility: hidden;
+        opacity: 0;
         border-radius: 2px;
 
         .project-section-sub-title {
-          text-align   : center;
-          font-size    : 2rem;
-          font-weight  : 600;
+          text-align: center;
+          font-size: 2rem;
+          font-weight: 600;
           margin-bottom: 0.4em;
         }
 
         .project-section-p {
-          font-family: 'Work Sans', sans-serif;
+          font-family: "Work Sans", sans-serif;
           line-height: 1.5rem;
         }
       }
@@ -311,22 +314,22 @@ body {
 
     .box-1 {
       grid-column: 1/2;
-      grid-row   : 1/3;
+      grid-row: 1/3;
     }
 
     .box-2 {
       grid-column: 2/3;
-      grid-row   : 1/2;
+      grid-row: 1/2;
     }
 
     .box-3 {
       grid-column: 2/3;
-      grid-row   : 2/3;
+      grid-row: 2/3;
     }
 
     .box-4 {
       grid-column: 3/4;
-      grid-row   : 1/3;
+      grid-row: 1/3;
     }
   }
 }
@@ -336,17 +339,16 @@ body {
   padding: 10em 0;
 
   .contact-img {
+    display: flex;
+    justify-content: flex-end;
     width: 60%;
 
     picture {
-      display        : flex;
-      justify-content: flex-end;
-      height         : 100%;
+      width: 80%;
 
       img {
-        width        : 80%;
-        max-width    : 100%;
-        height       : inherit;
+        max-width: 100%;
+        height: inherit;
         border-radius: 2px;
       }
     }
@@ -354,13 +356,13 @@ body {
 
   .contact-info {
     align-self: flex-start;
-    width     : 40%;
+    width: 40%;
     margin-top: 4em;
 
     .contact-us-main-title {
-      font-size    : 3.5rem;
+      font-size: 3.5rem;
       margin-bottom: 1em;
-      text-align   : center;
+      text-align: center;
     }
 
     .form {
@@ -397,33 +399,33 @@ body {
       }
 
       .input-container {
-        border       : 1px solid #ededed;
+        border: 1px solid #ededed;
         border-radius: 2px;
-        height       : 2.5em;
-        transition   : border 0.3s ease-in-out;
+        height: 2.5em;
+        transition: border 0.3s ease-in-out;
 
         &:hover {
           border: 1px solid $body-p-color;
         }
 
         input {
-          font-family: 'Work Sans', sans-serif;
+          font-family: "Work Sans", sans-serif;
           line-height: 1.5rem;
-          width      : 90%;
-          height     : 100%;
-          outline    : 0;
-          border     : 0;
+          width: 90%;
+          height: 100%;
+          outline: 0;
+          border: 0;
           margin-left: 1em;
 
           &::-moz-focus-inner {
             outline: 0;
-            border : 0;
+            border: 0;
           }
         }
       }
 
       label {
-        font-family: 'Work Sans', sans-serif;
+        font-family: "Work Sans", sans-serif;
         line-height: 2rem;
       }
 
@@ -432,53 +434,53 @@ body {
       }
 
       .textarea-container {
-        border       : 1px solid #ededed;
-        height       : 10em;
+        border: 1px solid #ededed;
+        height: 10em;
         margin-bottom: 1.5em;
         border-radius: 2px;
-        transition   : border 0.3s ease-in-out;
+        transition: border 0.3s ease-in-out;
 
         &:hover {
           border: 1px solid $body-p-color;
         }
 
         textarea {
-          font-family: 'Work Sans', sans-serif;
+          font-family: "Work Sans", sans-serif;
           line-height: 1.5rem;
-          width      : 94%;
-          height     : 84%;
-          outline    : 0;
-          border     : 0;
-          resize     : none;
-          margin-top : 1.1em;
+          width: 94%;
+          height: 84%;
+          outline: 0;
+          border: 0;
+          resize: none;
+          margin-top: 1.1em;
           margin-left: 1em;
 
           &::-moz-focus-inner {
             outline: 0;
-            border : 0;
+            border: 0;
           }
         }
       }
 
       .contact-section-btn {
-        font-family  : 'Work Sans', sans-serif;
-        color        : #fff;
-        padding      : 0.8em 1.5em;
-        background   : $body-p-color;
+        font-family: "Work Sans", sans-serif;
+        color: #fff;
+        padding: 0.8em 1.5em;
+        background: $body-p-color;
         margin-bottom: 1.5em;
         border-radius: 2px;
-        border       : none;
-        outline      : none;
-        cursor       : pointer;
+        border: none;
+        outline: none;
+        cursor: pointer;
       }
 
       .agreement {
-        font-family: 'Work Sans', sans-serif;
+        font-family: "Work Sans", sans-serif;
         line-height: 1.5rem;
 
         span {
           a {
-            color     : #6e6e6e;
+            color: #6e6e6e;
             transition: all 0.3s ease-in-out;
 
             &:hover {
@@ -497,13 +499,13 @@ body {
 // Footer Styles
 
 #footer {
-  padding   : 2em 0;
+  padding: 2em 0;
   background: $grey-color;
 
   .copyright {
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
     line-height: 1.5rem;
-    text-align : center;
+    text-align: center;
   }
 }
 /******************************* Media query ******************************/
@@ -520,7 +522,7 @@ body {
   // Header Styles
   #header {
     .nav {
-      width  : 100%;
+      width: 100%;
       padding: 1em 0;
 
       .row {
@@ -528,7 +530,7 @@ body {
 
         .navbar-link {
           display: flex;
-          width  : 40%;
+          width: 40%;
         }
 
         .hamburger-menu {
@@ -542,7 +544,7 @@ body {
     padding: 8em 0;
 
     .jumbo-text {
-      width : 100%;
+      width: 100%;
       margin: 4em 0 0;
 
       .main-title {
@@ -573,7 +575,7 @@ body {
     }
 
     .about-us-text {
-      width : 100%;
+      width: 100%;
       margin: 4em 0 0;
 
       .about-us-main-title {
@@ -659,14 +661,14 @@ body {
 
       .nav {
         display: inline-block;
-        width  : 100%;
+        width: 100%;
         padding: 1em 0;
 
         .row {
           flex-wrap: nowrap;
 
           .logo {
-            width      : 30%;
+            width: 30%;
             margin-left: 2em;
 
             img {
@@ -679,38 +681,38 @@ body {
           }
 
           .hamburger-menu {
-            display     : block;
+            display: block;
             margin-right: 2em;
           }
         }
       }
 
       .mobile-menu {
-        display        : flex;
-        flex-direction : column;
+        display: flex;
+        flex-direction: column;
         justify-content: flex-start;
-        align-items    : flex-start;
-        padding        : 2em 0;
-        width          : 100%;
-        height         : 100vh;
-        position       : absolute;
-        background     : #fff;
-        opacity        : 0;
-        visibility     : hidden;
-        transition     : all 0.3s ease-in-out;
+        align-items: flex-start;
+        padding: 2em 0;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background: #fff;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
 
         &.active {
-          opacity   : 1;
+          opacity: 1;
           visibility: visible;
         }
 
         li {
           margin: 2em 0 0 2em;
-          width : 95%;
+          width: 95%;
 
           .links {
             display: block;
-            width  : 100%;
+            width: 100%;
           }
         }
       }
@@ -721,7 +723,7 @@ body {
     padding: 8em 0;
 
     .jumbo-text {
-      width : 100%;
+      width: 100%;
       margin: 4em 0 0;
 
       .main-title {
@@ -731,7 +733,7 @@ body {
 
     .jumbo-img {
       justify-content: center;
-      width          : 100%;
+      width: 100%;
 
       picture {
         img {
@@ -753,7 +755,7 @@ body {
     }
 
     .about-us-text {
-      width : 100%;
+      width: 100%;
       margin: 4em 0 0;
 
       .about-us-main-title {
@@ -788,22 +790,22 @@ body {
 
       .box-1 {
         grid-column: 1/2;
-        grid-row   : 1/2;
+        grid-row: 1/2;
       }
 
       .box-2 {
         grid-column: 2/3;
-        grid-row   : 1/2;
+        grid-row: 1/2;
       }
 
       .box-3 {
         grid-column: 2/3;
-        grid-row   : 2/3;
+        grid-row: 2/3;
       }
 
       .box-4 {
         grid-column: 1/2;
-        grid-row   : 2/3;
+        grid-row: 2/3;
       }
 
       .box + .box {
@@ -826,7 +828,7 @@ body {
     }
 
     .contact-info {
-      width     : 100%;
+      width: 100%;
       margin-top: 0;
 
       .contact-us-main-title {
@@ -888,7 +890,7 @@ body {
 
         .textarea-container {
           textarea {
-            width : 92%;
+            width: 92%;
             height: 87%;
           }
         }
@@ -913,14 +915,14 @@ body {
 
       .nav {
         display: inline-block;
-        width  : 100%;
+        width: 100%;
         padding: 1em 0;
 
         .row {
           flex-wrap: nowrap;
 
           .logo {
-            width      : 45%;
+            width: 45%;
             margin-left: 2em;
 
             img {
@@ -933,38 +935,38 @@ body {
           }
 
           .hamburger-menu {
-            display     : block;
+            display: block;
             margin-right: 2em;
           }
         }
       }
 
       .mobile-menu {
-        display        : flex;
-        flex-direction : column;
+        display: flex;
+        flex-direction: column;
         justify-content: flex-start;
-        align-items    : flex-start;
-        padding        : 2em 0;
-        width          : 100%;
-        height         : 100vh;
-        position       : absolute;
-        background     : #fff;
-        opacity        : 0;
-        visibility     : hidden;
-        transition     : all 0.3s ease-in-out;
+        align-items: flex-start;
+        padding: 2em 0;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background: #fff;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
 
         &.active {
-          opacity   : 1;
+          opacity: 1;
           visibility: visible;
         }
 
         li {
           margin: 2em 0 0 2em;
-          width : 90%;
+          width: 90%;
 
           .links {
             display: block;
-            width  : 100%;
+            width: 100%;
           }
         }
       }
@@ -975,7 +977,7 @@ body {
     padding: 8em 0;
 
     .jumbo-text {
-      width : 100%;
+      width: 100%;
       margin: 0 0 4em;
 
       .main-title {
@@ -985,7 +987,7 @@ body {
 
     .jumbo-img {
       justify-content: center;
-      width          : 100%;
+      width: 100%;
 
       picture {
         img {
@@ -1003,7 +1005,7 @@ body {
     padding: 8em 0;
 
     .about-us-img {
-      width : 100%;
+      width: 100%;
       margin: 0 0 4em;
 
       img {
@@ -1012,7 +1014,7 @@ body {
     }
 
     .about-us-text {
-      width : 100%;
+      width: 100%;
       margin: 0;
 
       .about-us-main-title {
@@ -1034,8 +1036,8 @@ body {
 
     .service-grid-container {
       grid-template-columns: 1fr;
-      grid-template-rows   : 490px;
-      grid-gap             : 3.5em;
+      grid-template-rows: 490px;
+      grid-gap: 3.5em;
 
       .box + .box {
         margin-left: 0;
@@ -1052,28 +1054,28 @@ body {
 
     .project-grid-container {
       grid-template-columns: 1fr;
-      grid-gap             : 3.5em;
+      grid-gap: 3.5em;
 
       .box-1 {
         grid-column: 1/1;
-        grid-row   : 1/2;
+        grid-row: 1/2;
       }
 
       .box-2 {
         grid-column: 1/1;
-        grid-row   : 2/3;
-        height     : 310px;
+        grid-row: 2/3;
+        height: 310px;
       }
 
       .box-3 {
         grid-column: 1/1;
-        grid-row   : 3/4;
-        height     : 310px;
+        grid-row: 3/4;
+        height: 310px;
       }
 
       .box-4 {
         grid-column: 1/1;
-        grid-row   : 4/5;
+        grid-row: 4/5;
       }
 
       .box + .box {
@@ -1086,7 +1088,7 @@ body {
     padding: 8em 0;
 
     .contact-info {
-      width : 100%;
+      width: 100%;
       margin: 0 0 3em;
 
       .contact-us-main-title {
@@ -1098,12 +1100,12 @@ body {
           margin-bottom: 1.5em;
 
           .first-name-group {
-            width        : 100%;
+            width: 100%;
             margin-bottom: 1.5em;
           }
 
           .last-name-group {
-            width : 100%;
+            width: 100%;
             margin: 0 0 1.5em;
           }
 
@@ -1116,12 +1118,12 @@ body {
           margin-bottom: 1.5em;
 
           .phone-number-group {
-            width        : 100%;
+            width: 100%;
             margin-bottom: 1.5em;
           }
 
           .company-name-group {
-            width        : 100%;
+            width: 100%;
             margin-bottom: 1.5em;
           }
 
@@ -1133,8 +1135,8 @@ body {
         .textarea-container {
           textarea {
             margin-left: 0.8em;
-            width      : 95%;
-            height     : 86%;
+            width: 95%;
+            height: 86%;
           }
         }
       }

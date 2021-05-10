@@ -25,7 +25,7 @@ source {
 
 body {
   font-size: 0.9em;
-  font-family: 'Source Serif Pro', 'Work Sans', sans-serif;
+  font-family: "Source Serif Pro", "Work Sans", sans-serif;
   color: #303030; }
 
 .container {
@@ -51,7 +51,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 30%;
-    font-family: 'Work Sans', sans-serif; }
+    font-family: "Work Sans", sans-serif; }
     #header .nav .navbar-link a {
       color: #6e6e6e;
       transition: all 0.1s ease-in-out; }
@@ -73,7 +73,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 30%;
-  font-family: 'Work Sans', sans-serif; }
+  font-family: "Work Sans", sans-serif; }
   #header .mobile-menu a {
     color: #6e6e6e;
     transition: all 0.1s ease-in-out; }
@@ -90,23 +90,22 @@ body {
       font-size: 3.5rem;
       margin-bottom: 0.2em; }
     #jumbo-section .jumbo-text .jumbo-p {
-      font-family: 'Work Sans', sans-serif;
+      font-family: "Work Sans", sans-serif;
       margin-bottom: 3em;
       line-height: 1.5rem; }
     #jumbo-section .jumbo-text .jumbo-btn {
-      font-family: 'Work Sans', sans-serif;
+      font-family: "Work Sans", sans-serif;
       color: #fff;
       padding: 0.8em 1.5em;
       background: #303030;
       border-radius: 2px; }
   #jumbo-section .jumbo-img {
+    display: flex;
+    justify-content: flex-end;
     width: 60%; }
     #jumbo-section .jumbo-img picture {
-      display: flex;
-      justify-content: flex-end;
-      height: 100%; }
+      width: 80%; }
       #jumbo-section .jumbo-img picture img {
-        width: 80%;
         max-width: 100%;
         border-radius: 2px; }
   #jumbo-section .jumbo-text + .jumbo-img {
@@ -130,7 +129,7 @@ body {
       font-size: 3.5rem;
       margin-bottom: 0.5em; }
     #about-us-section .about-us-text .about-us-p {
-      font-family: 'Work Sans', sans-serif;
+      font-family: "Work Sans", sans-serif;
       margin-bottom: 3em;
       line-height: 1.5rem; }
       #about-us-section .about-us-text .about-us-p span {
@@ -162,7 +161,7 @@ body {
       margin-bottom: 0.6em;
       border-radius: 2px; }
     #service-section .service-grid-container .box .service-section-p {
-      font-family: 'Work Sans', sans-serif;
+      font-family: "Work Sans", sans-serif;
       line-height: 1.5rem; }
   #service-section .box + .box {
     margin-left: 3em; }
@@ -203,7 +202,7 @@ body {
           font-weight: 600;
           margin-bottom: 0.4em; }
         #project-section .project-grid-container .box .project-info .project-section-p {
-          font-family: 'Work Sans', sans-serif;
+          font-family: "Work Sans", sans-serif;
           line-height: 1.5rem; }
     #project-section .project-grid-container .box-1 {
       grid-column: 1/2;
@@ -221,13 +220,12 @@ body {
 #contact-section {
   padding: 10em 0; }
   #contact-section .contact-img {
+    display: flex;
+    justify-content: flex-end;
     width: 60%; }
     #contact-section .contact-img picture {
-      display: flex;
-      justify-content: flex-end;
-      height: 100%; }
+      width: 80%; }
       #contact-section .contact-img picture img {
-        width: 80%;
         max-width: 100%;
         height: inherit;
         border-radius: 2px; }
@@ -263,7 +261,7 @@ body {
       #contact-section .contact-info .form .input-container:hover {
         border: 1px solid #303030; }
       #contact-section .contact-info .form .input-container input {
-        font-family: 'Work Sans', sans-serif;
+        font-family: "Work Sans", sans-serif;
         line-height: 1.5rem;
         width: 90%;
         height: 100%;
@@ -274,7 +272,7 @@ body {
           outline: 0;
           border: 0; }
     #contact-section .contact-info .form label {
-      font-family: 'Work Sans', sans-serif;
+      font-family: "Work Sans", sans-serif;
       line-height: 2rem; }
     #contact-section .contact-info .form .email-address {
       margin-bottom: 1.5em; }
@@ -287,7 +285,7 @@ body {
       #contact-section .contact-info .form .textarea-container:hover {
         border: 1px solid #303030; }
       #contact-section .contact-info .form .textarea-container textarea {
-        font-family: 'Work Sans', sans-serif;
+        font-family: "Work Sans", sans-serif;
         line-height: 1.5rem;
         width: 94%;
         height: 84%;
@@ -300,7 +298,7 @@ body {
           outline: 0;
           border: 0; }
     #contact-section .contact-info .form .contact-section-btn {
-      font-family: 'Work Sans', sans-serif;
+      font-family: "Work Sans", sans-serif;
       color: #fff;
       padding: 0.8em 1.5em;
       background: #303030;
@@ -310,7 +308,7 @@ body {
       outline: none;
       cursor: pointer; }
     #contact-section .contact-info .form .agreement {
-      font-family: 'Work Sans', sans-serif;
+      font-family: "Work Sans", sans-serif;
       line-height: 1.5rem; }
       #contact-section .contact-info .form .agreement span a {
         color: #6e6e6e;
@@ -324,7 +322,7 @@ body {
   padding: 2em 0;
   background: #fafafa; }
   #footer .copyright {
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
     line-height: 1.5rem;
     text-align: center; }
 
